@@ -1,0 +1,52 @@
+---
+title: "Deploying A Contract"
+---
+
+# Deploying a Contract on Moonchain
+
+:::caution[CAUTION]
+Make sure you are using a test/throwaway wallet, to be save. Never reveal the private key of your main wallet!
+:::
+
+This guide will help you deploy a smart contract on Moonchain (Hudson Testnet) using Foundry.
+
+## Prerequisites
+- [Foundry](https://book.getfoundry.sh/getting-started/installation) is installed.
+- You have the private key handy to an account that has `Test $MCH Tokens` on Moonchain Hudson (to pay the transaction fee for deploying the contract).
+    - [Retrieve the private key with MetaMask](https://support.metamask.io/managing-my-wallet/secret-recovery-phrase-and-private-keys/how-to-export-an-accounts-private-key/).
+    - [Generate wallet keys with OpenSSL](https://gist.github.com/miguelmota/3793b160992b4ea0b616497b8e5aee2f).
+- Have some Test $MCH Tokens on Moonchain Hudson:
+    - [Request Test $MCH Tokens](/testnet-tutorials/moonchain-faucet/) from the faucet.
+
+<iframe 
+    width="800" height="450" src="https://www.youtube.com/embed/OPyRcqAup8o" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowFullScreen>
+</iframe>
+
+## Steps
+### Create a Project with Foundry
+To scaffold a new Foundry project, run:
+```sh
+forge init hello_foundry $$ cd hello_foundry
+```
+
+### Deploy the Contract
+Replace `YOUR_PRIVATE_KEY` below with your private key that has some Test $MCH Tokens on Moonchain Hudson testnet.
+
+Deploy the contract located at `src/Counter.sol`:
+```sh
+forge create --rpc-url https://Hudson-rpc.mchain.ai --private-key YOUR_PRIVATE_KEY src/Counter.sol:Counter
+```
+
+:::note[[INFO]]
+If you encounter an error --> `ERROR: (Code: -32000, message: contract creation code storage out of gas, data: None)`, consider deploying using [Remix IDE](https://remix.ethereum.org/).
+:::
+
+### View Your Contract
+Paste the address from the output into the [Moonchain Hudson Block Explorer](https://Hudson-explorer.moonchain.com/) and verify that the contract was deployed.
+
+### pending state is not available
+
+Due to the removal of the pending block tag in  RPC ([#6076](https://github.com/NomicFoundation/hardhat/issues/6076#issuecomment-2565779351)), if you deploy using Hardhat, you will encounter the issue `pending state is not available`. Using Foundry can avoid this problem, or you can migrate your Hardhat project to [Harsta](https://github.com/hairyf/harsta), harsta which will continue to support .

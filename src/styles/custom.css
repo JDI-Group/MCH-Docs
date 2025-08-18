@@ -1,0 +1,609 @@
+/* MCH Brand Guidelines - Custom styles for Moonchain documentation */
+
+/* Import MCH Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* MCH Brand Colors */
+  --sl-color-accent-low: #a8cc47;
+  --sl-color-accent: #D2F159;
+  --sl-color-accent-high: #e4f77f;
+  
+  /* Background Colors */
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: #fafafa;
+  --sl-color-bg-sidebar: #ffffff;
+  --sl-color-bg-inline-code: #f5f5f5;
+  
+  /* Text Colors */
+  --sl-color-text: #000000;
+  --sl-color-text-invert: #ffffff;
+  --sl-color-text-accent: #a8cc47;
+  
+  /* Border Colors */
+  --sl-color-hairline: #e5e5e5;
+  --sl-color-hairline-shade: #d4d4d4;
+  
+  /* Gray Scale */
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #f9f9f9;
+  --sl-color-gray-2: #f5f5f5;
+  --sl-color-gray-3: #e5e5e5;
+  --sl-color-gray-4: #d4d4d4;
+  --sl-color-gray-5: #a3a3a3;
+  --sl-color-gray-6: #525252;
+  --sl-color-black: #000000;
+  
+  /* MCH Brand Fonts */
+  --sl-font-system: 'Nunito', system-ui, sans-serif;
+  --sl-font-system-mono: 'Inter', 'Courier New', monospace;
+}
+
+/* Light Mode - MCH Brand (explicit) */
+:root[data-theme='light'], :root:not([data-theme]) {
+  /* MCH Light Theme Colors */
+  --sl-color-accent-low: #7a9b33;
+  --sl-color-accent: #a8cc47;
+  --sl-color-accent-high: #D2F159;
+  
+  /* Light Backgrounds */
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: #fafafa;
+  --sl-color-bg-sidebar: #ffffff;
+  --sl-color-bg-inline-code: #f5f5f5;
+  
+  /* Light Text - Complete Set */
+  --sl-color-text: #000000 !important;
+  --sl-color-text-invert: #ffffff !important;
+  --sl-color-text-accent: #7a9b33 !important;
+  --sl-color-gray-1: #f8f8f8;
+  --sl-color-gray-2: #f0f0f0;
+  --sl-color-gray-3: #e0e0e0;
+  --sl-color-gray-4: #c0c0c0;
+  --sl-color-gray-5: #666666;
+  --sl-color-gray-6: #333333;
+  --sl-color-black: #000000;
+  --sl-color-white: #ffffff;
+  
+  /* Light Borders */
+  --sl-color-hairline: #e5e5e5;
+  --sl-color-hairline-shade: #d4d4d4;
+  
+  /* FORCE ALL STARLIGHT COLOR VARIABLES TO BLACK */
+  --sl-color-text-card: #000000 !important;
+  --sl-color-text-body: #000000 !important;
+  --sl-color-text-heading: #000000 !important;
+  --sl-color-text-nav: #000000 !important;
+  --sl-color-text-sidebar: #000000 !important;
+  --sl-color-text-footer: #000000 !important;
+  --sl-color-text-search: #000000 !important;
+}
+
+/* Dark Mode - MCH Brand */
+:root[data-theme='dark'] {
+  /* MCH Dark Theme */
+  --sl-color-accent-low: #a8cc47;
+  --sl-color-accent: #D2F159;
+  --sl-color-accent-high: #e4f77f;
+  
+  /* Dark Backgrounds */
+  --sl-color-bg: #000000;
+  --sl-color-bg-nav: #1E1F24;
+  --sl-color-bg-sidebar: #000000;
+  --sl-color-bg-inline-code: #1E1F24;
+  
+  /* Dark Text */
+  --sl-color-text: #ffffff;
+  --sl-color-text-invert: #000000;
+  --sl-color-text-accent: #D2F159;
+  
+  /* Dark Borders */
+  --sl-color-hairline: #333333;
+  --sl-color-hairline-shade: #525252;
+}
+
+/* Font Family Overrides */
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+}
+
+/* ROOT LEVEL Light Mode Color Fix */
+:root[data-theme='light'] body,
+:root:not([data-theme]) body {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+/* Force all descendant elements to inherit proper color in light mode */
+:root[data-theme='light'] body *,
+:root:not([data-theme]) body * {
+  color: inherit !important;
+}
+
+/* UNIVERSAL Light Mode Text Fix - Override ALL elements */
+html[data-theme='light'] *,
+html:not([data-theme]) * {
+  color: #000000 !important;
+}
+
+/* Exceptions for links and special elements */
+html[data-theme='light'] a,
+html:not([data-theme]) a {
+  color: var(--sl-color-accent) !important;
+}
+
+html[data-theme='light'] code,
+html[data-theme='light'] pre,
+html:not([data-theme]) code,
+html:not([data-theme]) pre {
+  color: inherit !important;
+}
+
+/* Exceptions for elements that should have different colors */
+:root[data-theme='light'] a,
+:root:not([data-theme]) a {
+  color: var(--sl-color-accent) !important;
+}
+
+:root[data-theme='light'] a:hover,
+:root:not([data-theme]) a:hover {
+  color: var(--sl-color-accent-low) !important;
+}
+
+/* Headings use Nunito Bold/Semibold */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-weight: 700; /* Bold */
+  color: var(--sl-color-text);
+}
+
+h2, h3 {
+  font-weight: 600; /* Semibold */
+  color: var(--sl-color-text);
+}
+
+/* Ensure main content text is properly colored */
+.sl-markdown-content p,
+.sl-markdown-content li,
+.sl-markdown-content td {
+  color: var(--sl-color-text);
+}
+
+/* Code and monospace use Inter */
+code, pre, .sl-markdown-content code {
+  font-family: 'Inter', 'Courier New', monospace;
+}
+
+/* Navigation and UI elements */
+.sl-nav a {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 500; /* Medium */
+}
+
+/* COMPREHENSIVE Light Mode UI Fixes */
+/* Force all text elements to use proper colors in light mode */
+
+/* Sidebar and Navigation */
+:root[data-theme='light'] aside,
+:root[data-theme='light'] nav,
+:root[data-theme='light'] .sl-sidebar,
+:root[data-theme='light'] .starlight-sidebar,
+:root:not([data-theme]) aside,
+:root:not([data-theme]) nav,
+:root:not([data-theme]) .sl-sidebar,
+:root:not([data-theme]) .starlight-sidebar {
+  color: #000000 !important;
+}
+
+/* All links in sidebar and navigation */
+:root[data-theme='light'] aside a,
+:root[data-theme='light'] nav a,
+:root[data-theme='light'] .sl-sidebar a,
+:root[data-theme='light'] .starlight-sidebar a,
+:root:not([data-theme]) aside a,
+:root:not([data-theme]) nav a,
+:root:not([data-theme]) .sl-sidebar a,
+:root:not([data-theme]) .starlight-sidebar a {
+  color: #333333 !important;
+}
+
+/* Site title and headers */
+:root[data-theme='light'] .site-title,
+:root[data-theme='light'] .starlight-header,
+:root[data-theme='light'] header,
+:root:not([data-theme]) .site-title,
+:root:not([data-theme]) .starlight-header,
+:root:not([data-theme]) header {
+  color: #000000 !important;
+}
+
+/* Navigation buttons and controls */
+:root[data-theme='light'] button,
+:root[data-theme='light'] .sl-search-button,
+:root[data-theme='light'] .sl-theme-toggle,
+:root[data-theme='light'] .sl-sidebar-button,
+:root:not([data-theme]) button,
+:root:not([data-theme]) .sl-search-button,
+:root:not([data-theme]) .sl-theme-toggle,
+:root:not([data-theme]) .sl-sidebar-button {
+  color: #000000 !important;
+}
+
+/* All text content in light mode */
+:root[data-theme='light'] *:not(code):not(pre),
+:root:not([data-theme]) *:not(code):not(pre) {
+  color: inherit;
+}
+
+/* Specific overrides for common elements */
+:root[data-theme='light'] span,
+:root[data-theme='light'] div,
+:root[data-theme='light'] p,
+:root[data-theme='light'] li,
+:root[data-theme='light'] label,
+:root:not([data-theme]) span,
+:root:not([data-theme]) div,
+:root:not([data-theme]) p,
+:root:not([data-theme]) li,
+:root:not([data-theme]) label {
+  color: inherit;
+}
+
+/* Navigation group titles */
+:root[data-theme='light'] .sl-nav-group-title,
+:root:not([data-theme]) .sl-nav-group-title {
+  color: #000000 !important;
+}
+
+/* Active/current page indicators */
+:root[data-theme='light'] [aria-current="page"],
+:root:not([data-theme]) [aria-current="page"] {
+  color: #000000 !important;
+}
+
+/* Fix search bar in light mode */
+:root[data-theme='light'] .pagefind-ui,
+:root[data-theme='light'] .pagefind-ui *,
+:root[data-theme='light'] input[type="search"],
+:root[data-theme='light'] .sl-search-button,
+:root[data-theme='light'] .sl-search-button *,
+:root:not([data-theme]) .pagefind-ui,
+:root:not([data-theme]) .pagefind-ui *,
+:root:not([data-theme]) input[type="search"],
+:root:not([data-theme]) .sl-search-button,
+:root:not([data-theme]) .sl-search-button * {
+  color: #000000 !important;
+}
+
+/* Fix Getting Started section in light mode */
+:root[data-theme='light'] .sl-container,
+:root[data-theme='light'] .sl-container *,
+:root[data-theme='light'] .content-panel,
+:root[data-theme='light'] .content-panel *,
+:root[data-theme='light'] .starlight-content,
+:root[data-theme='light'] .starlight-content *,
+:root:not([data-theme]) .sl-container,
+:root:not([data-theme]) .sl-container *,
+:root:not([data-theme]) .content-panel,
+:root:not([data-theme]) .content-panel *,
+:root:not([data-theme]) .starlight-content,
+:root:not([data-theme]) .starlight-content * {
+  color: inherit !important;
+}
+
+/* Specifically target card components */
+:root[data-theme='light'] .sl-card,
+:root[data-theme='light'] .sl-card *,
+:root[data-theme='light'] .card-grid,
+:root[data-theme='light'] .card-grid *,
+:root:not([data-theme]) .sl-card,
+:root:not([data-theme]) .sl-card *,
+:root:not([data-theme]) .card-grid,
+:root:not([data-theme]) .card-grid * {
+  color: #000000 !important;
+}
+
+/* Force all hero/splash page elements */
+:root[data-theme='light'] .hero,
+:root[data-theme='light'] .hero *,
+:root[data-theme='light'] .sl-flex,
+:root[data-theme='light'] .sl-flex *,
+:root:not([data-theme]) .hero,
+:root:not([data-theme]) .hero *,
+:root:not([data-theme]) .sl-flex,
+:root:not([data-theme]) .sl-flex * {
+  color: #000000 !important;
+}
+
+/* Additional search and input fixes */
+:root[data-theme='light'] input,
+:root[data-theme='light'] input::placeholder,
+:root[data-theme='light'] .search-input,
+:root[data-theme='light'] .search-input *,
+:root:not([data-theme]) input,
+:root:not([data-theme]) input::placeholder,
+:root:not([data-theme]) .search-input,
+:root:not([data-theme]) .search-input * {
+  color: #000000 !important;
+}
+
+/* NUCLEAR OPTION - Fix ALL Card Backgrounds and Text in Light Mode */
+:root[data-theme='light'] [class*="card"],
+:root[data-theme='light'] [class*="Card"],
+:root:not([data-theme]) [class*="card"],
+:root:not([data-theme]) [class*="Card"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+:root[data-theme='light'] [class*="card"] *,
+:root[data-theme='light'] [class*="Card"] *,
+:root:not([data-theme]) [class*="card"] *,
+:root:not([data-theme]) [class*="Card"] * {
+  color: #000000 !important;
+  background-color: transparent !important;
+}
+
+/* Target search modal and dropdown */
+:root[data-theme='light'] [class*="search"],
+:root[data-theme='light'] [class*="Search"],
+:root:not([data-theme]) [class*="search"],
+:root:not([data-theme]) [class*="Search"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+:root[data-theme='light'] [class*="search"] *,
+:root[data-theme='light'] [class*="Search"] *,
+:root:not([data-theme]) [class*="search"] *,
+:root:not([data-theme]) [class*="Search"] * {
+  color: #000000 !important;
+  background-color: transparent !important;
+}
+
+/* SUPER SPECIFIC Search Bar Fixes */
+:root[data-theme='light'] .sl-search,
+:root[data-theme='light'] .sl-search button,
+:root[data-theme='light'] .sl-search input,
+:root[data-theme='light'] dialog,
+:root[data-theme='light'] [role="search"],
+:root[data-theme='light'] [role="searchbox"],
+:root:not([data-theme]) .sl-search,
+:root:not([data-theme]) .sl-search button,
+:root:not([data-theme]) .sl-search input,
+:root:not([data-theme]) dialog,
+:root:not([data-theme]) [role="search"],
+:root:not([data-theme]) [role="searchbox"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+/* Search button specific styling */
+:root[data-theme='light'] button[aria-label*="Search"],
+:root[data-theme='light'] button[aria-label*="search"],
+:root:not([data-theme]) button[aria-label*="Search"],
+:root:not([data-theme]) button[aria-label*="search"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Pagefind specific overrides */
+:root[data-theme='light'] .pagefind-ui__search-input,
+:root[data-theme='light'] .pagefind-ui__button,
+:root[data-theme='light'] .pagefind-ui__result,
+:root:not([data-theme]) .pagefind-ui__search-input,
+:root:not([data-theme]) .pagefind-ui__button,
+:root:not([data-theme]) .pagefind-ui__result {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Universal search element override */
+html[data-theme='light'] *[class*="search"]:not([class*="card"]),
+html:not([data-theme]) *[class*="search"]:not([class*="card"]) {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Fix keyboard shortcut button (⌘ K) */
+:root[data-theme='light'] kbd,
+:root[data-theme='light'] .sl-search kbd,
+:root[data-theme='light'] [data-open-modal] kbd,
+:root[data-theme='light'] button kbd,
+:root:not([data-theme]) kbd,
+:root:not([data-theme]) .sl-search kbd,
+:root:not([data-theme]) [data-open-modal] kbd,
+:root:not([data-theme]) button kbd {
+  background-color: #f5f5f5 !important;
+  color: #000000 !important;
+  border: 1px solid #d0d0d0 !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+}
+
+/* Search button container fixes */
+:root[data-theme='light'] [data-open-modal],
+:root[data-theme='light'] [data-open-modal] *,
+:root:not([data-theme]) [data-open-modal],
+:root:not([data-theme]) [data-open-modal] * {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Search modal trigger button */
+:root[data-theme='light'] button[data-open-modal],
+:root:not([data-theme]) button[data-open-modal] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+/* Force override any background-color set by JavaScript or inline styles */
+html[data-theme='light'] [style*="background"],
+html:not([data-theme]) [style*="background"] {
+  background-color: #ffffff !important;
+}
+
+html[data-theme='light'] [style*="color"],
+html:not([data-theme]) [style*="color"] {
+  color: #000000 !important;
+}
+
+/* MCH Brand Button Styles */
+.big-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  background: linear-gradient(135deg, #D2F159 0%, #a8cc47 100%);
+  color: #000000;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-weight: 600; /* Semibold */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.big-button:hover {
+  background: linear-gradient(135deg, #e4f77f 0%, #D2F159 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+  color: #000000;
+}
+
+/* Moonchain logo adjustments */
+.site-title img {
+  height: 2rem;
+}
+
+/* MCH Brand Admonition Styles */
+.sl-markdown-content .starlight-aside--tip {
+  border-color: #D2F159;
+  background-color: rgba(210, 241, 89, 0.1);
+}
+
+.sl-markdown-content .starlight-aside--note {
+  border-color: #927FF;
+  background-color: rgba(146, 127, 255, 0.1);
+}
+
+.sl-markdown-content .starlight-aside--caution {
+  border-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.sl-markdown-content .starlight-aside--danger {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Image responsiveness */
+.sl-markdown-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Card grid enhancements */
+.sl-card-grid {
+  gap: 1.5rem;
+}
+
+/* Code block enhancements */
+.sl-markdown-content pre {
+  border-radius: 0.5rem;
+  border: 1px solid var(--sl-color-gray-3);
+}
+
+/* Table styling */
+.sl-markdown-content table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.sl-markdown-content th,
+.sl-markdown-content td {
+  border: 1px solid var(--sl-color-gray-3);
+  padding: 0.5rem 1rem;
+}
+
+.sl-markdown-content th {
+  background-color: var(--sl-color-gray-1);
+  font-weight: 600;
+}
+
+/* Dark mode table header fixes */
+:root[data-theme='dark'] .sl-markdown-content th {
+  background-color: var(--sl-color-gray-6);
+  color: #ffffff !important;
+}
+
+:root[data-theme='dark'] .sl-markdown-content td {
+  color: #ffffff !important;
+}
+
+/* Light mode table styling */
+:root[data-theme='light'] .sl-markdown-content th,
+:root:not([data-theme]) .sl-markdown-content th {
+  background-color: var(--sl-color-gray-1);
+  color: #000000 !important;
+}
+
+:root[data-theme='light'] .sl-markdown-content td,
+:root:not([data-theme]) .sl-markdown-content td {
+  color: #000000 !important;
+}
+
+/* MCH Brand - Link Styles */
+.sl-markdown-content a {
+  color: var(--sl-color-accent);
+  font-weight: 500;
+}
+
+.sl-markdown-content a:hover {
+  color: var(--sl-color-accent-low);
+}
+
+/* MCH Brand - Card Enhancements */
+.sl-card {
+  border: 1px solid var(--sl-color-hairline);
+  transition: all 0.3s ease;
+}
+
+.sl-card:hover {
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 4px 12px rgba(210, 241, 89, 0.2);
+}
+
+/* MCH Brand - Code Block Styling */
+.sl-markdown-content pre {
+  border-radius: 0.5rem;
+  border: 1px solid var(--sl-color-hairline);
+  background: var(--sl-color-bg-inline-code);
+}
+
+.sl-markdown-content code:not(pre code) {
+  background: var(--sl-color-bg-inline-code);
+  color: var(--sl-color-text);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'Inter', monospace;
+  font-size: 0.875em;
+}
+
+/* MCH Brand - Navigation Enhancements */
+.sl-nav a[aria-current="page"] {
+  background: linear-gradient(135deg, rgba(210, 241, 89, 0.1) 0%, rgba(168, 204, 71, 0.1) 100%);
+  border-left: 3px solid var(--sl-color-accent);
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .big-button {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}

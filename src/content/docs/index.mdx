@@ -1,36 +1,132 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Moonchain Documentation
+description: Welcome to the official developer documentation of Moonchain
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  title: 'Moonchain zkEVM SNARKification'
+  tagline: Moonchain is building a decentralized AI hardware network by pioneering an Initial Hardware Offering (IHO) where users stake $MCH tokens to receive and deploy functional hardware, creating a distributed AI compute layer. | Shooting for the Moon 🌙
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get Started
+      link: /moonchain-design/chains-and-testnets/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Check RPC endpoints
+      link: /resources/rpc-configuration/
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+:::tip[WIP]
+This documentation is still a work in progress. Some topics have been discussed in greater depth, while others require additional clarification. Sections of this documentation might be reorganized later to achieve a better flow.
+
+If you are interested in learning about the basics of zero-knowledge proofs, EVM, and other fundamental concepts behind our Beam Chain, check out Moonchain on [Twitter](https://twitter.com/Moonchain_com).
+:::
+
+## 🌔 Getting Started
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Configure Your Wallet to Moonchain" icon="setting">
+    [Configure Your Wallet to Moonchain](/moonchain-design/chains-and-testnets/)
+  </Card>
+  <Card title="Check RPC endpoints" icon="external">
+    [Check RPC endpoints](/resources/rpc-configuration/)
+  </Card>
+  <Card title="Run a Beam Chain validator node" icon="rocket">
+    [Run a Beam Chain validator node](/testnet-tutorials/run-moonchain-supernode/)
+  </Card>
+  <Card title="DePIN hexagon" icon="star">
+    [DePIN hexagon](/moonchain-design/hexagons/)
+  </Card>
+  <Card title="Build a Dapp on Moonchain" icon="add-document">
+    [Build a Dapp on Moonchain](/testnet-tutorials/build-a-dapp/)
+  </Card>
+  <Card title="Beam Chain Bridge" icon="external">
+    [Beam Chain Bridge](/mainnet-tutorials/using-the-l3-bridge/)
+  </Card>
 </CardGrid>
+
+## 📖 Introducing Moonchain zkEVM
+
+Welcome to the cutting-edge world of Moonchain, engineered to serve as the Ethereum for the Internet of Things (IoT), Decentralized Physical Infrastructure Networks (DePIN), and Artificial Intelligence (AI). Unlike other blockchains, Moonchain is uniquely designed to make DePIN, AI and IoT scalable. Our team of seasoned developers and blockchain experts is at the forefront of the Web3 revolution, pushing the boundaries of what's possible.
+
+### 🔥Key Features
+
+- **IoT/DePIN Scaling**: Enhancing the scalability of IoT and DePIN applications using the Moonchain token as underlying foundation of the infrastructure.
+- **Wide Range of Applications**: Empowering developers to design, backtest, and deploy any application on the Moonchain Layer 2 blockchain.
+- **Advanced Token Capabilities**: Facilitating Sensor Token Offerings (STOs) and NFT issuances for real-world assets, leveraging innovative protocols like [MEP-600](/moonchain-design/meps-moonchain/)
+
+## 🌎 Native dApp Solutions
+
+At Moonchain, we've developed a suite of native decentralized applications (dApps) to enhance and support your projects. When you deploy your application on Moonchain, you can directly use our in-house dApps to extend utility, functionality and streamline integration. These include:
+
+- **L1-Beam Chain Bridge**: Seamlessly connect to different blockchain layers, facilitating smooth and efficient asset transfers.
+- **NFT Marketplace**: Create, buy, sell and trade NFTs with ease on our robust marketplace platform.
+- **Swapping dApp**: Exchange token pairs effortlessly using our intuitive swapping application.
+- **Moonchain Name Service (MNS)**: Create custom, easy-to-remember names to simplify transactions across blockchains, unify your identity in the Web3 ecosystem, and manage your decentralized websites.
+- **XSD (Lending and Borrowing Protocol)**: Add collateral to borrow funds, maximizing the utility of your tokens through our comprehensive protocol.
+
+These are just a few examples of our extensive collection of dApps designed to enhance your experience on Moonchain. Discover more [here](https://www.moonchain.com), and leverage our innovative solutions to propel your decentralized applications forward.
+
+## 🌊 Use the Hudson testnet
+
+Before deploying to the Moonchain mainnet, it's essential to backtest your applications on the Hudson testnet. Find all the instructions in our guides, including:
+
+- **Block explorer**: Explore transactions and blocks on the Hudson testnet with ease.
+- **Hudson bridge/faucet**: Access resources to bridge tokens or obtain testnet tokens for development purposes.
+- **NFT Marketplace**: Experiment with creating and interacting with NFTs.
+- **Hudson Swap**: Test token swaps and liquidity provisions in a controlled environment.
+- **Moonchain Name Service (MNS)**: Create custom, easy-to-remember names to simplify transactions across blockchains, unify your identity in the Web3 ecosystem, and manage your decentralized websites.
+- **XSD (Lending and Borrowing Protocol)**: Explore borrowing and lending functionalities within our testnet ecosystem.
+
+Prepare your applications thoroughly on the Hudson testnet to ensure seamless deployment and optimal performance on the Moonchain mainnet.
+
+## 🤝 Become a Contributor to Moonchain
+
+Moonchain is a fully open-source and community driven project, check out our Telegram or Github to get started as a contributor!
+
+<div style="display: flex; gap: 1rem; margin: 1rem 0;">
+  <a href="https://t.me/Moonchain_official" style="padding: 0.75rem 1.5rem; background: #0088cc; color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 500;">Telegram</a>
+  <a href="https://github.com/JDI-Group" style="padding: 0.75rem 1.5rem; background: #333; color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 500;">Github</a>
+</div>
+
+## 🚀 Moonchain Ecosystem Partners
+
+The Moonchain ecosystem continues to expand rapidly, driven by collaboration with notable projects across various domains. These partnerships underscore our commitment to advancing decentralized solutions and fostering innovation in the blockchain space. We are proud to collaborate with the following partners:
+
+![Moonchain Ecosystem Partners](/img/Moonchain_Ecosystem.jpg)
+
+**Notable DePIN Projects**
+- BlueberryRing: Partnering for advancements in decentralized physical infrastructure networks.
+- IoTeX (@iotex_io): Contributing to IoT interoperability and security.
+- Drife (@Drife_official): Innovating in decentralized ride-hailing services.
+- Airo Systems (@airosystems): Pushing boundaries in air quality monitoring and IoT solutions.
+- Oyster Ecosystem (@oysterecosystem): Enhancing decentralized storage solutions.
+- Tailz (@tailz_xyz): Revolutionizing pet care services through decentralized platforms.
+- DidDiscovery (@DidDiscovery): Advancing decentralized identity solutions.
+- Coral App (@MyCoralApp): Empowering communities through decentralized social platforms.
+- Aphone Labs (@aphonelabs): Innovating in decentralized communication technologies.
+
+**RWA (Real World Assets)**
+- RewardsBunny (@rewardsbunny): Integrating real-world assets into blockchain ecosystems.
+
+**Infrastructure**
+- Drop Wireless (@dropwireless): Providing infrastructure support for decentralized networks.
+
+**Data & Tooling**
+- Public AI (@PublicAI_): Advancing data analytics and tooling for decentralized applications.
+
+**Venture Capitalists (VCs)**
+
+-   **Global JDI (@Global_JDI):** Partnering for investment and growth in blockchain innovations.
+-   **CandaqCom:** Contributing to the venture capital landscape supporting blockchain startups.
+-   **OKX Ventures:** The investment arm of a leading global crypto exchange, providing deep industry expertise and strategic ecosystem support.
+-   **UOB Venture Management:** A premier banking group's venture arm, bridging traditional finance with blockchain innovation and unlocking access to institutional markets.
+-   **CITIC Capital:** A top-tier institutional asset manager, bringing significant enterprise-level credibility and deep access to Asian capital markets.
+
+**Launchpad**
+- UXUY (@uxuycom): Empowering blockchain startups through comprehensive launchpad services.
+
+These partnerships are instrumental in shaping the Moonchain ecosystem, enabling us to drive forward our vision of a decentralized future. We value our partners greatly and look forward to continued growth and innovation together.
