@@ -4,9 +4,9 @@ title: "Chains And Testnets"
 
 # Moonchain Chains Overview
 
-Moonchain Chains are Layer 3 solutions built atop the Ethereum Blockchain, aimed at enhancing scalability and reducing transaction costs. This overview guides through the configuration of Mainnet and Testnet wallets.
+Moonchain Chains are Layer 2 solutions built atop the BNB Chain, aimed at enhancing scalability and reducing transaction costs. This overview guides through the configuration of Mainnet and Testnet wallets.
 
-Moonchain operates two testnet networks: **Moonchain (Hudson Testnet)** and **BNB chain (Sepolia)**.
+Moonchain operates two testnet networks: **Moonchain (Hudson Testnet)** and **BNB Chain Testnet**.
 
 ### BSC Chain
 
@@ -14,7 +14,7 @@ BSC Chain replicates the functionalities of BNB chain's main network, providing 
 
 ### Moonchain Hudson
 
-Moonchain Hudson operates similarly to Sepolia but leverages Layer 3 capabilities. Unlike Ethereum's native token **ETH**, Moonchain uses **MCH** as its native token.
+Moonchain Hudson operates similarly to BNB Chain Testnet but leverages Layer 2 capabilities. Unlike Ethereum's native token **ETH**, Moonchain uses **MCH** as its native token.
 
 :::caution[CAUTION]
 The old testnet Hudson was deprecated on April, 2024.
@@ -37,10 +37,10 @@ The old testnet Hudson was deprecated on April, 2024.
 4. Click on Add Network and then Add a network manually.
 5. Enter the RPC configuration details for the Moonchain Hudson testnet from the RPC Configuration details below.
 
-#### Add the BNB chain (Sepolia) Testnet
-1. Visit the Chainlist website and check for [BNB chain Sepolia](https://chainlist.org/chain/421614).
+#### Add the BNB Chain Testnet
+1. Visit the Chainlist website and check for [BNB Chain Testnet](https://chainlist.org/chain/97).
 2. Connect with your wallet.
-3. Click on Add to MetaMask to add the Sepolia Testnet to your network list.
+3. Click on Add to MetaMask to add the BNB Chain Testnet to your network list.
 
 #### Connect to Moonchain Mainnet
 1. Visit the RPC Configuration page.

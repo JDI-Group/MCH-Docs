@@ -2,11 +2,11 @@
 title: "Tns"
 ---
 
-# Terms & Conditions for Moonbase Layer3 Wallet
+# Terms & Conditions for Moonbase Layer2 Wallet
 
 ## 1. Introduction and Acceptance
 
-Welcome to the Moonbase Layer3 Wallet. The Moonbase Layer3 Wallet ("the Wallet") is a digital service designed for the Moonchain.com Layer 3 and all EVM compatible chains, primarily to facilitate interactions with Dapps in Layer3. By accessing, registering, or utilizing the Moonbase Layer3 Wallet, you ("the User") acknowledge that you have read, understood, and agreed to be bound by the following Terms & Conditions (T&C), and any future amendments and additions to this T&C as published from time to time at this location.
+Welcome to the Moonbase Layer2 Wallet. The Moonbase Layer2 Wallet ("the Wallet") is a digital service designed for the Moonchain.com Layer 2 and all EVM compatible chains, primarily to facilitate interactions with Dapps in Layer2. By accessing, registering, or utilizing the Moonbase Layer2 Wallet, you ("the User") acknowledge that you have read, understood, and agreed to be bound by the following Terms & Conditions (T&C), and any future amendments and additions to this T&C as published from time to time at this location.
 
 ## 2. User Responsibilities
 
@@ -29,7 +29,7 @@ For your security:
 
 ## 5. Wallet Services
 
-The Moonbase Layer3 Wallet offers a range of services including, but not limited to:
+The Moonbase Layer2 Wallet offers a range of services including, but not limited to:
 - Signing transactions, sending funds, and approving transactions.
 - While the wallet operates on decentralized principles, users should understand that decentralization means there's no central authority overseeing your funds or data.
 
@@ -37,17 +37,17 @@ The Moonbase Layer3 Wallet offers a range of services including, but not limited
 
 It is imperative to understand that:
 - You bear sole responsibility for the safekeeping of your private keys, the verification of your transactions, and the recovery of your funds if necessary.
-- The Moonbase Layer3 Wallet is a tool, and cannot intervene, recover lost funds, or reverse transactions once executed.
+- The Moonbase Layer2 Wallet is a tool, and cannot intervene, recover lost funds, or reverse transactions once executed.
 
 ## 7. Fees
 
-Using the Moonbase Layer3 Wallet incurs:
+Using the Moonbase Layer2 Wallet incurs:
 - No fees for general usage.
 - However, specific activities such as signing, sending, and approving transactions might attract fees that users must pay directly to the Moonchain.com or other chains. Additionally, various Dapps may institute their fees for services.
 
 ## 8. Intellectual Property
 
-All intellectual properties, including but not limited to content, branding, trademarks, and the look and feel of the Moonbase Layer3 Wallet, are the exclusive property of Moonbase Explorations Inc.
+All intellectual properties, including but not limited to content, branding, trademarks, and the look and feel of the Moonbase Layer2 Wallet, are the exclusive property of Moonbase Explorations Inc.
 
 ## 9. User Restrictions
 
@@ -76,16 +76,16 @@ For a smooth and effective communication process:
 
 We greatly value input from our community:
 - We welcome and encourage feedback and suggestions.
-- Any feedback, suggestions, or improvements made become the exclusive property of the Moonbase Layer3 Wallet, and we reserve the right to implement, modify, or disregard any submitted ideas without any obligations to the user.
+- Any feedback, suggestions, or improvements made become the exclusive property of the Moonbase Layer2 Wallet, and we reserve the right to implement, modify, or disregard any submitted ideas without any obligations to the user.
 
 ## 14. Compliance with Laws
 
-As a user of the Moonbase Layer3 Wallet:
+As a user of the Moonbase Layer2 Wallet:
 - You are obligated to comply with all applicable local, state, national, and international laws, regulations, and sanctions related to your use of our services and your transactions.
 
 ## 16. Force Majeure
 
-The Moonbase Layer3 Wallet shall not be deemed in breach of this T&C or held liable for any cessation, interruption, or delay in the performance of its obligations due to causes beyond its reasonable control, including but not limited to earthquake, flood, war, terrorism, or governmental restrictions.
+The Moonbase Layer2 Wallet shall not be deemed in breach of this T&C or held liable for any cessation, interruption, or delay in the performance of its obligations due to causes beyond its reasonable control, including but not limited to earthquake, flood, war, terrorism, or governmental restrictions.
 
 ## 17. Miscellaneous
 

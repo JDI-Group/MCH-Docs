@@ -2,17 +2,17 @@
 title: "Moonbase Privacy Policy"
 ---
 
-# Privacy Policy for Moonbase Layer3 Wallet
+# Privacy Policy for Moonbase Layer2 Wallet
 
 ## 1. Introduction
 
-At Moonbase Layer3 Wallet, we prioritize the privacy and security of our users. This Privacy Policy outlines how your information may be collected and used by Dapp providers and blockchain RPC nodes, and the responsibilities of users in this context. By using the Moonbase Layer3 Wallet, you agree to these terms.
+At Moonbase Layer2 Wallet, we prioritize the privacy and security of our users. This Privacy Policy outlines how your information may be collected and used by Dapp providers and blockchain RPC nodes, and the responsibilities of users in this context. By using the Moonbase Layer2 Wallet, you agree to these terms.
 
 ## 2. Information Collection and Use
 
-### No Personal Information Collection by Moonbase Layer3 Wallet
+### No Personal Information Collection by Moonbase Layer2 Wallet
 
-Moonbase Layer3 Wallet does not collect any personal information such as your name, email address, or other identifiable information.
+Moonbase Layer2 Wallet does not collect any personal information such as your name, email address, or other identifiable information.
 
 ### Information Collection by Dapp Providers and Blockchain RPC Nodes
 

@@ -12,7 +12,7 @@ At block height 288888, Moonchain integrates IPNS into its Data Availability (DA
 
 ## What is Data Availability?
 
-Data Availability (DA) in the context of MCH zkEVM refers to the capability of any node within the network to retrieve transaction history stored using IPNS (InterPlanetary Name System). In blockchain systems like MCH zkEVM, ensuring that block data is accessible to all participants is critical for scalability, particularly when employing a rollup model. This accessibility prevents the possibility of block data being withheld, whether intentionally or unintentionally. Therefore, a key challenge in maintaining a trustless Layer 3 (L3) network lies in ensuring continuous access to transaction data through decentralized storage solutions such as IPNS.
+Data Availability (DA) in the context of MCH zkEVM refers to the capability of any node within the network to retrieve transaction history stored using IPNS (InterPlanetary Name System). In blockchain systems like MCH zkEVM, ensuring that block data is accessible to all participants is critical for scalability, particularly when employing a rollup model. This accessibility prevents the possibility of block data being withheld, whether intentionally or unintentionally. Therefore, a key challenge in maintaining a trustless Layer 2 (L2) network lies in ensuring continuous access to transaction data through decentralized storage solutions such as IPNS.
 
 ## Trust Minimization
 
@@ -20,7 +20,7 @@ Trustlessness is a fundamental principle in blockchain design, signifying that u
 
 On a network like Ethereum (Layer 1), this verification is handled by full nodes, which store the entire blockchain history. These nodes enable users to verify the correctness of state transitions.
 
-For Moochain zkEVM, transactions are executed on the Layer 3 (L3) chain. Thus, Moonchain zkEVM nodes must access L3 transaction data and cryptographic evidence of state transitions (such as Merkle Proofs) on Arbitrum (Layer 2), while the transaction batch data is stored on IPNS.
+For Moonchain zkEVM, transactions are executed on the Layer 2 (L2) chain. Thus, Moonchain zkEVM nodes must access L2 transaction data and cryptographic evidence of state transitions (such as Merkle Proofs) on BNB Chain (Layer 1), while the transaction batch data is stored on IPNS.
 
 The robustness of Ethereum's trust network is derived from its extensive validator network, a reliable consensus algorithm, security through widespread adoption, and the distributed value of $ETH.
 
@@ -45,4 +45,4 @@ Moonchain zkEVM DA allows permissioned nodes to offer data availability services
 - **Distributed Hash Table**: Employs a distributed hash table (DHT) for efficient data exchange and storage among network participants, ensuring decentralized and resilient data management.
 - **Data Integrity and Availability**: Ensures the integrity and availability of data, allowing for the complete reconstruction of block data, which is crucial for maintaining trust and transparency.
 - **High Throughput and Low Gas Costs**: Optimized for advanced applications, such as blockchain gaming and decentralized social networks, by offering high throughput and low gas costs.
-- **Comprehensive Data Display**: The [Moonchain zkEVM Explorer](https://explorer.moonchain.com/) provides detailed views of transaction batches stored on the DA layer via IPNS, along with transactions on L3, ensuring transparency and accessibility of information.
+- **Comprehensive Data Display**: The [Moonchain zkEVM Explorer](https://explorer.moonchain.com/) provides detailed views of transaction batches stored on the DA layer via IPNS, along with transactions on L2, ensuring transparency and accessibility of information.
