@@ -469,7 +469,40 @@ html:not([data-theme]) [style*="color"] {
   background: linear-gradient(135deg, #e4f77f 0%, #D2F159 100%);
   transform: translateY(-2px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
-  color: #000000;
+  color: #000000 !important;
+}
+
+/* Light mode specific button hover fixes */
+:root[data-theme='light'] .big-button:hover,
+:root:not([data-theme]) .big-button:hover {
+  background: linear-gradient(135deg, #e4f77f 0%, #D2F159 100%) !important;
+  color: #000000 !important;
+}
+
+/* Ensure button text is always visible in light mode */
+:root[data-theme='light'] .big-button,
+:root[data-theme='light'] .big-button *,
+:root:not([data-theme]) .big-button,
+:root:not([data-theme]) .big-button * {
+  color: #000000 !important;
+}
+
+/* Fix all button hover states in light mode */
+:root[data-theme='light'] button:hover,
+:root[data-theme='light'] .sl-card:hover,
+:root[data-theme='light'] a:hover,
+:root:not([data-theme]) button:hover,
+:root:not([data-theme]) .sl-card:hover,
+:root:not([data-theme]) a:hover {
+  color: #000000 !important;
+}
+
+/* Specific hover states for action buttons */
+:root[data-theme='light'] .sl-card:hover *,
+:root[data-theme='light'] button:hover *,
+:root:not([data-theme]) .sl-card:hover *,
+:root:not([data-theme]) button:hover * {
+  color: inherit !important;
 }
 
 /* Moonchain logo adjustments */
