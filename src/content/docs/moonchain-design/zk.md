@@ -8,13 +8,13 @@ title: "Zk"
 
 At Moonchain, once a block is produced, validated, and verified, a certain amount of new MCH tokens will be minted. These newly minted MCH tokens are then added to the staking pool, where participants in the mining process can earn them as rewards.
 
-![zk_MCH](/img/./zk_MCH.png)
+![zk_MCH](/img/Moonchain-Design/zk_MCH.png)
 
 ## Participating
 
 There are two types of participants: miner owners and those without miners who wish to join the process. Miner owners act as group leaders, forming mining groups and allowing others to participate. Group leaders must keep their miners in good condition to receive rewards. Those joining a group should choose one with a strong track record of miner performance, as any penalties imposed on a disqualified mining group will affect all associated participants.
 
-![zk_StakingRoles](/img/./zk_StakingRoles.png)
+![zk_StakingRoles](/img/Moonchain-Design/zk_StakingRoles.png)
 
 *PS: The reward distribution shown above is subject to change over time.*
 
@@ -46,7 +46,7 @@ A service running on the miner that retrieves jobs from the back end, generates 
 
 The staking-related contracts have been deployed on the Arbitrum chain.
 
-![zk_StakingContracts](/img/./zk_StakingContracts.png)
+![zk_StakingContracts](/img/Moonchain-Design/zk_StakingContracts.png)
 
 When an SGX miner is produced, the manufacturer mints an NFT for it. When a user purchases the miner, they can claim the corresponding NFT to their own wallet.
 
@@ -60,13 +60,13 @@ Users without a miner can stake by referencing an existing group. When rewards a
 
 A staking period, known as an epoch, lasts for seven days and aligns with every Thursday at 00:00 UTC. Rewards are calculated based on the number of epochs the amount has been staked.
 
-![zk_EpochTimeline](/img/./zk_EpochTimeline.png)
+![zk_EpochTimeline](/img/Moonchain-Design/zk_EpochTimeline.png)
 
 
 
 ## Penalty
 
-![zk_PenaltyTimeline](/img/./zk_PenaltyTimeline.png)
+![zk_PenaltyTimeline](/img/Moonchain-Design/zk_PenaltyTimeline.png)
 
 #### Reward Reduction
 
