@@ -12,7 +12,7 @@ title: "Addresses"
 
 | Contract name | Contract address                                             |
 | ------------- | ------------------------------------------------------------ |
-| MCH Token | [0x5ca381bbfb58f0092df149bd3d243b08b9a8386e](https://bscscan.io/token/0x5ca381bbfb58f0092df149bd3d243b08b9a8386e) |
+| MCH Token | [tbd](https://bscscan.io/token/tbd) |
 
 
 
