@@ -16,18 +16,7 @@ BSC Chain replicates the functionalities of BNB chain's main network, providing 
 
 Moonchain Hudson operates similarly to BNB Chain Testnet but leverages Layer 2 capabilities. Unlike Ethereum's native token **ETH**, Moonchain uses **MCH** as its native token.
 
-:::caution[CAUTION]
-The old testnet Hudson was deprecated on April, 2024.
-:::
 
-### Steps to Add Networks to MetaMask
-
-<iframe 
-    width="800" height="450" src="https://www.youtube.com/embed/y0MeycuNmEo?start=68" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowFullScreen>
-</iframe>
 
 
 #### Add the Moonchain Hudson Testnet
@@ -36,6 +25,10 @@ The old testnet Hudson was deprecated on April, 2024.
 3. Click on the network selection at the top right.
 4. Click on Add Network and then Add a network manually.
 5. Enter the RPC configuration details for the Moonchain Hudson testnet from the RPC Configuration details below.
+
+#### Faucet
+
+Hudson faucet: https://hudson-bridge.mchain.ai/faucet
 
 #### Add the BNB Chain Testnet
 1. Visit the Chainlist website and check for [BNB Chain Testnet](https://chainlist.org/chain/97).
@@ -53,8 +46,8 @@ The old testnet Hudson was deprecated on April, 2024.
 
 | Network                      | Chain ID | RPC URL                           | Symbol | Block Explorer URL                         | Web Socket URL                        |
 |------------------------------|----------|-----------------------------------|--------|--------------------------------------------|---------------------------------------|
-| BNB chain                 | 42161    | https://bsc-dataseed.bnbchain.org           | ETH    | https://bscscan.com               |                                       |
-| Moonchain Mainnet            | 999888    | https://rpc.moonchain.com             | MCH    | https://explorer.moonchain.com/            | wss://rpc.MCH.com/ws                  |
+| BNB chain                 | 42161    | https://bsc-dataseed.bnbchain.org           | BNB    | https://bscscan.com               |                                       |
+| Moonchain Mainnet            | 999888    | https://rpc.moonchain.com             | MCH    | https://explorer.moonchain.com/            | wss://rpc.moonchain.com/ws                  |
 | Moonchain Hudson Testnet     | 177888  | https://Hudson-rpc.mchain.ai   | MCH    | https://Hudson-explorer.mchain.ai    | wss://Hudson-rpc.moonchain.com/ws     |
 
 ## Troubleshooting
