@@ -2,123 +2,208 @@
 title: "Addresses"
 ---
 
-# Important Contracts
+# Moonchain Networks Information
 
+This document provides comprehensive information for Moonchain Hudson Testnet (Chain ID: 177888) and Moonchain Mainnet (Chain ID: 999888).
 
+## Network Overview
 
-## Mainnet Layer 1 contracts
+### Hudson Testnet (Chain ID: 177888)
+- **Network Name**: Moonchain Hudson Testnet
+- **Chain ID**: 177888
+- **L1 Chain ID**: 97
+- **RPC**: https://hudson-rpc.mchain.ai
+- **WSS**: wss://hudson-
+- **Block Explorer**: https://hudson-explorer.mchain.ai
+- **Bridge**: https://hudson-bridge.mchain.ai
+- **Faucet**: https://hudson-bridge.mchain.ai/faucet
+- **DEX**: https://hudson-swap.mchain.ai
+- **ProverManager**: https://hudson-prover-manager.mchain.ai
+- **ProverManager Graph**: https://api.studio.thegraph.com/query/119010/prover-manager-testnet/version/latest
+- **Graph Node**: https://hudson-graph-node.mchain.ai (network name: `hudson`)
 
-**Ethereum Mainnet**
+### Mainnet (Chain ID: 999888)
+- **Network Name**: Moonchain Mainnet
+- **Chain ID**: 999888
+- **L1 Chain ID**: 56
+- **RPC**: https://rpc.mchain.ai
+- **Block Explorer**: https://explorer.mchain.ai
+- **Bridge**: https://bridge.mchain.ai
+- **DEX**: https://swap.mchain.ai
+- **ProverManager**: https://prover-manager.mchain.ai
+- **ProverManager Graph**: TGE
+- **Graph Node**: https://graph-node.mchain.ai (network name: `moonchain`)
+## L1 Contract Deployment Addresses
 
-| Contract name | Contract address                                             |
-| ------------- | ------------------------------------------------------------ |
-| MCH Token | [tbd](https://bscscan.io/token/tbd) |
+### Hudson Testnet L1 Contracts
 
+| Contract Name | Address |
+|---------------|---------|
+| **Core Protocol** | |
+| Taiko L1 | `0x1d33883d0D4CD84F566fd1f4dC47B625c66b5dc1` |
+| Rollup Address Manager | `0xFb0BaA9656cb90745bcd0127465AFA141CaFC6C1` |
+| Shared Address Manager | `0xb516e12417e870C55120e44960BAdf5062272256` |
+| **Token** | |
+| Moonchain Token | `0x96aF0A235aF3CAd6719B23207DB212153d9c88D1` |
+| **Bridge System** | |
+| Bridge | `0xc67293d7625C7c97b98A2D7f7eb73254923cD235` |
+| Signal Service | `0x5B11974595f6ce1dC4f296853C4596205103D7C0` |
+| ERC20 Vault | `0xB21DE20a12570bf9b139E5a82750E6412DdBD674` |
+| ERC721 Vault | `0xD6418FA10d9B1834bdFcaC65Bc10Ba0919aB40Ad` |
+| ERC1155 Vault | `0xcB18b88cd4E3193E1b862DA9d21999BED6296897` |
+| **Verification System** | |
+| Guardian Prover | `0xdD5275B357f6E265ec0F20db7AeA7d83f672358c` |
+| Guardian Prover Minority | `0xD6dA99175C86573f688B0E70066FDeeb4d0eB481` |
+| Prover Set | `0x5eBAEf63f023A5e886b07528342AD1CDcc796D48` |
+| SGX Verifier | `0x61db964133eE38357b828607957f88be35c06Fcd` |
+| RISC0 Verifier | `0x2006CAEa1e0b07402e5B944C7718BF2a37FF10a1` |
+| SP1 Verifier | `0x74585313dAcC5EA862c838d822F4aBdaAf160a7b` |
+| **Others** | |
+| Staking | `0xE83513506896f21bc9f82C56f746685b95204F89` |
+| Automata DCAP Attestation | `0x49D9D5dF36763Cb5DEBEd993c8C3Ac1088EbCD14` |
+| BSC-MCH Price Aggregator | `0xDF9518569038EB5dE184E4dacb062e4336A2B999` |
 
+### Mainnet L1 Contracts
 
-## Mainnet Layer 2 contracts
+| Contract Name | Address |
+|---------------|---------|
+| **Core Protocol** | |
+| Taiko L1 | `0xB262d982623A9cE0E80e2A779E1B283eab11b2E3` |
+| Rollup Address Manager | `0x09b75B4Dc9a3e6E53B7B0caF9D7832A746002C1B` |
+| Shared Address Manager | `0x385fA59A786EF4e62a0867a402Eb23e95c16d16c` |
+| **Token** | |
+| Moonchain Token | `0xF8F331DFa811132c43C308757CD802ca982b7211` |
+| **Bridge System** | |
+| Bridge | `0x908763286950364392a76e3E8Be35fBBC3C4F7ee` |
+| Signal Service | `0x0d48ba08D394D6c00eB235890780eDE473481F9a` |
+| ERC20 Vault | `0x1D183fb294f1E823a109F54b0EFC8141a9998fA9` |
+| ERC721 Vault | `0x34eEB30835E9642cF13aA7efBc15b0B964031FDe` |
+| ERC1155 Vault | `0x61Ea9F897C001384F7C352094Bb2e84E8ED2b4B3` |
+| **Verification System** | |
+| Guardian Prover | `0xe4ED2e0058D1f14AdDf691bA754B25206deF3dff` |
+| Guardian Prover Minority | `0x67B8dfC224d8FC9773aF3fba4e69692020AD6dC6` |
+| Prover Set | `0xeAD6B10349f9cA352217f4775fbEDE86AB9a6281` |
+| SGX Verifier | `0xd01855D910Abbab3218cf2565a7601908f6c6606` |
+| RISC0 Verifier | `0x006Bf714d2dd552696A3Bbe57D9B176b0e0619ba` |
+| SP1 Verifier | `0x45152f6686bA6931894E4d3da0f070c2Dd510AED` |
+| **Others** | |
+| Staking | `0xf9928Dd1C3575Cca9eCe5F50981A681fAC4768d5` |
+| Automata DCAP Attestation | `0x672DF53Bdd86a48b36D3927B86445c02Cf1fA01E` |
+| BSC-MCH Price Aggregator | `0x4435FdB2FE0CC7FD929A5b33E4FDdfc1cB7947DE` |
 
-**BNB Chain**
+## L2 Contract Deployment Addresses
 
-| Contract name             | Contract address                                             |
-| ------------------------- | ------------------------------------------------------------ |
-| Automata Dcap Attestation | [0x478932D33a02A14C354c18055AFdFc7fb04E1cA5](https://arbiscan.io/address/0x478932D33a02A14C354c18055AFdFc7fb04E1cA5) |
-| Bridge                    | [0x4C3924E619E2eE83cFD565c1432cb621ca8af7A0](https://arbiscan.io/address/0x4C3924E619E2eE83cFD565c1432cb621ca8af7A0) |
-| ERC1155 Vault             | [0xD6F6B23Cd1bfD48ce2ce8b82e527280aa4b53b14](https://arbiscan.io/address/0xD6F6B23Cd1bfD48ce2ce8b82e527280aa4b53b14) |
-| ERC20 Vault               | [0x3160284BC2F4d7F5b170C70a0Ee0bC5333c7F39e](https://arbiscan.io/address/0x3160284BC2F4d7F5b170C70a0Ee0bC5333c7F39e) |
-| ERC721 Vault              | [0x844C4871Fe509C7C1fe26673458533DEB96025f8](https://arbiscan.io/address/0x844C4871Fe509C7C1fe26673458533DEB96025f8) |
-| Eth/MCH Price Aggregator  | [0x7F3C0E4f215dC8Caa30E2072b6e47f61d8a57811](https://arbiscan.io/address/0x7F3C0E4f215dC8Caa30E2072b6e47f61d8a57811) |
-| Guardian Prover           | [0xCD1e1671Ce6eb304c2D30ED77885Be1b0BF96aD6](https://arbiscan.io/address/0xCD1e1671Ce6eb304c2D30ED77885Be1b0BF96aD6) |
-| Guardian Prover Minority  | [0xb6f0d291B118f9F562d4Db388351Faf62A99c921](https://arbiscan.io/address/0xb6f0d291B118f9F562d4Db388351Faf62A99c921) |
-| Prover Set                | [0x817bdF595d88e5b0165993E4a6AF04F092584Fb7](https://arbiscan.io/address/0x817bdF595d88e5b0165993E4a6AF04F092584Fb7) |
-| Rollup Address Manager    | [0xF5146A105d14BDA41B866CaD0f96b8Ce3A4F19dF](https://arbiscan.io/address/0xF5146A105d14BDA41B866CaD0f96b8Ce3A4F19dF) |
-| Shared Address Manager    | [0xE7623Fc10eCDA172A023D64f4cebC1682F84BB26](https://arbiscan.io/address/0xE7623Fc10eCDA172A023D64f4cebC1682F84BB26) |
-| SignalService             | [0xB31EBab3Ac38B9B021CCe679B4059b790413Fa4E](https://arbiscan.io/address/0xB31EBab3Ac38B9B021CCe679B4059b790413Fa4E) |
-| Staking                   | [0x8fd1604E79a35189B02242BE68bdBcE5a041A1C4](https://arbiscan.io/address/0x8fd1604E79a35189B02242BE68bdBcE5a041A1C4) |
-| Tier SGX                  | [0xecdd613aB8E307F8A403fC7A00B8C609b1Ef22bE](https://arbiscan.io/address/0xecdd613aB8E307F8A403fC7A00B8C609b1Ef22bE) |
-| Tier ZKVM RISC0           | [0x4A5C01E22C60D8189419f6Ae7F6d47B1e470FC5b](https://arbiscan.io/address/0x4A5C01E22C60D8189419f6Ae7F6d47B1e470FC5b) |
-| Tier ZKVM SP1             | [0xaF7bB4d74Bdf6A44b1c6C9feD3A6606f8943064d](https://arbiscan.io/address/0xaF7bB4d74Bdf6A44b1c6C9feD3A6606f8943064d) |
-| MCH L1                    | [0x54D8864e8855A7B66eE42B8F2Eaa0F2E06bd641a](https://arbiscan.io/address/0x54D8864e8855A7B66eE42B8F2Eaa0F2E06bd641a) |
-| MCH Token                 | [0xaeDF7656fBB47c5B97dD529aC1D0e807E051f2dd](https://arbiscan.io/address/0xaeDF7656fBB47c5B97dD529aC1D0e807E051f2dd) |
+### Hudson Testnet L2 Contracts
 
+| Contract Name | Address |
+|---------------|---------|
+| **Core System** | |
+| Taiko L2 | `0x1778880000000000000000000000000000010001` |
+| Rollup Address Manager | `0x1778880000000000000000000000000000010002` |
+| Shared Address Manager | `0x1778880000000000000000000000000000000006` |
+| **Bridge System** | |
+| Bridge | `0x1778880000000000000000000000000000000001` |
+| Signal Service | `0x1778880000000000000000000000000000000005` |
+| ERC20 Vault | `0x1778880000000000000000000000000000000002` |
+| ERC721 Vault | `0x1778880000000000000000000000000000000003` |
+| ERC1155 Vault | `0x1778880000000000000000000000000000000004` |
+| **Bridged Token Templates** | |
+| Bridged ERC20 | `0x0177888000000000000000000000000000010096` |
+| Bridged ERC721 | `0x0177888000000000000000000000000000010097` |
+| Bridged ERC1155 | `0x0177888000000000000000000000000000010098` |
+| **DEX System** | |
+| WMCH (Wrapped MCH) | `0x1C5b8F35933d4C9BD0B49ca0b4F91475E1a6501b` |
+| Router | `0x67a61c45d1B08Ee723CfE2D9f33eDd5Ee475e99C` |
+| Factory | `0x72208C18A7a04B0E6A5f40898Cc460b94AA5e2a2` |
+| Multicall | `0x24d8aB4557d7cCe29f1CcDCB3969eF51B6B90A5F` |
+| **Token** | |
+| Moonchain Token | `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` |
 
+### Mainnet L2 Contracts
 
-## Mainnet Layer 2 contracts
+| Contract Name | Address |
+|---------------|---------|
+| **Core System** | |
+| Taiko L2 | `0x9998880000000000000000000000000000010001` |
+| Rollup Address Manager | `0x9998880000000000000000000000000000010002` |
+| Shared Address Manager | `0x9998880000000000000000000000000000000006` |
+| **Bridge System** | |
+| Bridge | `0x9998880000000000000000000000000000000001` |
+| Signal Service | `0x9998880000000000000000000000000000000005` |
+| ERC20 Vault | `0x9998880000000000000000000000000000000002` |
+| ERC721 Vault | `0x9998880000000000000000000000000000000003` |
+| ERC1155 Vault | `0x9998880000000000000000000000000000000004` |
+| BSC-MCH Price Aggregator | `0xb53CEf2164CEF261b051E948a10f7a7A6F9725E1` |
+| **Bridged Token Templates** | |
+| Bridged ERC20 | `0x0999888000000000000000000000000000010096` |
+| Bridged ERC721 | `0x0999888000000000000000000000000000010097` |
+| Bridged ERC1155 | `0x0999888000000000000000000000000000010098` |
+| **DEX System** | |
+| Factory | `0x32E76C140d66850b3dF478730A7A01cb78e96402` |
+| WMCH (Wrapped MCH) | `0x9423878649c42C6A7828Fc66De3cF0046eCf7BBf` |
+| Multicall | `0x49D18f94947748477A2Dd00148Bb6CaE67f6B6D5` |
+| Router | `0xb20679F06Ab673D6A21fB4A6Fd023Af76aa2043d` |
+| **Token** | |
+| Moonchain Token | `0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE` |
 
-**Moonchain Mainnet**
+## Key Features
 
-| Contract name            | Contract address                                             |
-| ------------------------ | ------------------------------------------------------------ |
-| Bridge                   | [0x1000777700000000000000000000000000000003](https://explorer.moonchain.com/address/0x1000777700000000000000000000000000000003) |
-| SignalService            | [0x1000777700000000000000000000000000000007](https://explorer.moonchain.com/address/0x1000777700000000000000000000000000000007) |
-| MCH L2                   | [0x1000777700000000000000000000000000000001](https://explorer.moonchain.com/address/0x1000777700000000000000000000000000000001) |
-| MCH Token                | [0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE](https://explorer.moonchain.com/address/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE) |
-| Rollup Address Manager   | [0x1000777700000000000000000000000000000006](https://explorer.moonchain.com/address/0x1000777700000000000000000000000000000006) |
-| Shared Address Manager   | [0x2000777700000000000000000000000000000002](https://explorer.moonchain.com/address/0x2000777700000000000000000000000000000002) |
-| Eth/MCH Price Aggregator | [0x0484e645F6287c7eA1B5E4f1F2aAdeE145Cc581e](https://explorer.moonchain.com/address/0x0484e645F6287c7eA1B5E4f1F2aAdeE145Cc581e) |
-| ERC721 Vault             | [0x523d07eF972991d47E58C1BD4A257E5000Ac684A](https://explorer.moonchain.com/address/0x523d07eF972991d47E58C1BD4A257E5000Ac684A) |
-| ERC20 Vault              | [0x68DfDe49A92c9f5C69FE64f62FA8239E931779bd](https://explorer.moonchain.com/address/0x68DfDe49A92c9f5C69FE64f62FA8239E931779bd) |
-| ERC1155 Vault            | [0xAC3B2C56c7e98b320b19774aC26a95CAea9cb72d](https://explorer.moonchain.com/address/0xAC3B2C56c7e98b320b19774aC26a95CAea9cb72d) |
+### Moonchain Token (MCH)
+- **Total Supply**: 1 billion MCH tokens
+- **Mining Rewards**: AI/ZK mining allocation (300M tokens) with 3.75% annual rate
+- **IHO Mining**: Independent Holder Offering allocation (10M tokens) with 10% annual rate
+- **Halving Mechanism**: 4-year half-life for sustainable token emissions
+- **Protocol Integration**: Automatic reward distribution every 10 blocks
 
+### Multi-Tier Verification System
+1. **SGX Tier**: Fast verification using Intel SGX hardware-based trusted execution
+2. **RISC0/SP1 Tiers**: Trustless verification using zero-knowledge proofs
+3. **Guardian Tier**: Multi-signature emergency fallback mechanism
+4. **Tier Escalation**: Higher tiers can contest lower tier proofs
 
+### Cross-Chain Bridge
+- **Supported Token Types**: ERC20, ERC721, ERC1155
+- **Fee Mechanism**: Includes gas costs and processing overhead
+- **Quota System**: Prevents bridge spam and ensures sustainability
+- **Security**: Message verification based on Merkle tree proofs
 
+## Developer Resources
 
+### Network Configuration
+```json
+// Hudson Testnet
+{
+  "chainId": 177888,
+  "chainName": "Moonchain Hudson",
+  "nativeCurrency": {
+    "name": "Moonchain",
+    "symbol": "MCH",
+    "decimals": 18
+  },
+  "rpcUrls": ["https://hudson-rpc.mchain.ai"],
+  "blockExplorerUrls": ["https://hudson-explorer.mchain.ai"]
+}
 
-## Hudson Testnet Layer 2 contracts
+// Mainnet
+{
+  "chainId": 999888,
+  "chainName": "Moonchain",
+  "nativeCurrency": {
+    "name": "Moonchain", 
+    "symbol": "MCH",
+    "decimals": 18
+  },
+  "rpcUrls": ["https://rpc.mchain.ai"],
+  "blockExplorerUrls": ["https://explorer.mchain.ai"]
+}
+```
 
-**BSC Chain**
+### Important Notes
+- Moonchain is a customized Layer 2 solution based on the Taiko Protocol
+- Fully compatible with Ethereum/BNB - any Ethereum/BNB dApp can run on Moonchain without modifications
+- Uses "based rollup" architecture where L1 Ethereum/BNB validators can participate in L2 block building
+- Supports multiple proof systems to ensure security and decentralization
 
-| Name      | Contract address                                                                                                   |
-|-----------|--------------------------------------------------------------------------------------------------------------------|
-| MCH Token | [0x8cfc40cfe94ef106ceec7d0c97e4f02af99954a4](https://testnet.bscscan.com/token/0x8cfc40cfe94ef106ceec7d0c97e4f02af99954a4) |
-| MCHL1| [0x6a5c9E342d5FB5f5EF8a799f0cAAB2678C939b0B](https://testnet.bscscan.com/address/0x6a5c9E342d5FB5f5EF8a799f0cAAB2678C939b0B)|
-| Automated Dcap Attestation | [0x3e0c0dAB767FE8BA386175F0d4C92D45A1A6A4Df](https://testnet.bscscan.com/address/0x3e0c0dAB767FE8BA386175F0d4C92D45A1A6A4Df) |
-| Bridge| [0x730Ae731eDCfDB31a22ecA2B72242dC072d36336](https://testnet.bscscan.com/address/0x730Ae731eDCfDB31a22ecA2B72242dC072d36336)|
-| ERC-1155 Vault | [0x6c7A4C797aDa9Bd706F376cF64f8C7F8163E4262](https://testnet.bscscan.com/address/0x6c7A4C797aDa9Bd706F376cF64f8C7F8163E4262) |
-| ERC-20 Vault | [0x35c0b3f24235b7dE65cDAc389FDF8E90684f0748](https://testnet.bscscan.com/address/0x35c0b3f24235b7dE65cDAc389FDF8E90684f0748)|
-| ERC-721 Vault | [0x8fd1604E79a35189B02242BE68bdBcE5a041A1C4](https://testnet.bscscan.com/address/0x8fd1604E79a35189B02242BE68bdBcE5a041A1C4) |
-| ETH MCH Price Aggregator | [0x18460557d2c8B12A3C6ECc58DaA0F19000a12B28](https://testnet.bscscan.com/address/0x18460557d2c8B12A3C6ECc58DaA0F19000a12B28)|
-| Guardian Prover | [0xD3343e8162BB51b52884B130439166e3DCe8851F](https://testnet.bscscan.com/address/0xD3343e8162BB51b52884B130439166e3DCe8851F) |
-| Guardian Prover Minority | [0xa51C5DA59aF39a7C18134a0CF497C70157C49476](https://testnet.bscscan.com/address/0xa51C5DA59aF39a7C18134a0CF497C70157C49476)|
-| Prover Set | [0x103FF2E2dfd9D5a163B652D8a913a4B0cA0AcBbB](https://testnet.bscscan.com/address/0x103FF2E2dfd9D5a163B652D8a913a4B0cA0AcBbB) |
-| Rollup Address Manager | [0x8687d9034D4e6A12d2F91DB6FF27fb2cab5979D9](https://testnet.bscscan.com/address/0x8687d9034D4e6A12d2F91DB6FF27fb2cab5979D9)|
-| Shared Address Manager | [0x5E453d54F7783446bb206B261A4bffb24859512f](https://testnet.bscscan.com/address/0x5E453d54F7783446bb206B261A4bffb24859512f)|
-| Signal Service  | [0x3d199603e63C61256E1a7Aac3DBe5a20C7a1bEB1](https://testnet.bscscan.com/address/0x3d199603e63C61256E1a7Aac3DBe5a20C7a1bEB1)|
-| Tier SGX  | [0x7FF12AC8385e67970eBB8aEAc6c42c133E690649](https://testnet.bscscan.com/address/0x7FF12AC8385e67970eBB8aEAc6c42c133E690649)|
-| Tier ZkEVM RISC0  | [0x425cB065F0f0e1BBF3FCB7FD5c4a0c94248863a6](https://testnet.bscscan.com/address/0x425cB065F0f0e1BBF3FCB7FD5c4a0c94248863a6)|
-| Tier ZkEVM SP1  | [0xf08B17b181B3452d683E0Ff64268686d8116EA61](https://testnet.bscscan.com/address/0xf08B17b181B3452d683E0Ff64268686d8116EA61)|
+---
 
-
-
-## Hudson Testnet Layer 2 contracts
-
-**Moonchain Hudson**
-
-| Contract Name | Contract Address | TAG | DEPLOYER |
-|----------------|-------------------|------|----------|
-| Factory | 0x39c47d083364b4A23d085c7945Fac9d42457d8C7 | Uniswap | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| Router | 0x96adb4c80F6c934a20303d4b88f935F967299d5e | Uniswap | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| Multicall | 0x88Ac471C3C020A5C3bD16Ec6756eeD81dc2C8E54 | Uniswap | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| BatchTransfer | 0x2c9f59e23Ca28BBD4DfDbDBada7A09eD47bDcc92 | Uniswap | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| WMCH | 0xa5c0d0d32b41473c581a979deab01651d1f5eff5 | Uniswap | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| ERC6551Registry | 0xEF4c00668a22a3C95f98A5D7468773f98c8C431b | MEP2542 | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| ERC6551AccountImplementation | 0x6c2660e11F64A404FB5023abe668799DCF899d09 | MEP2542 | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| MEP2542 | 0xf01eceed6319423bCC953889CB8F35E7084df1dF | MEP2542 | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| MEP2542AchievementERC1155NFT | 0xCE27F14c4f1BE9D0B4489E4B62C9809E20534e70 | MEP2542 |  |
-| MEP1002 | 0x1964F08f56b79051fB3AE9a2C4d8D92A059b1237 |  | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| MEP1004 | 0x0D589F5EeDF70e17F053CBb93760Db7E418603F6 |  | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| LPWAN | 0x2000777700000000000000000000000000000001 |  | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| MaxisCoin | 0x4a857D3ADFf611Dc87593a82d1129bAc1cf2eB1D | MEP2542,ISOToken | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| CrabCoin | 0xD9EeC15002fF7467a6841EDF6ea2D1048BaBc7c4 | MEP2542,ISOToken | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| Gin1689Coin | 0x1736Fe85010313251a99A66f8600e817Ac4aE126 | MEP2542,ISOToken | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| XMigrateToken | 0xEBfD054C5610f53Ce7CA04791bb245A422a528Db | MEP2542 |  |  
-| XBMCHToken | 0x5858BB637a3A2b76Ed64C9D71DB7708A57b6CC03 | MEP2542 | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| XMCHToken | 0x98b114269C2635ff2cB03F0526feb246d1082B4C | MEP2542 |  |
-| SensorToken | 0x727A7734afBB01C20681Cdd4F68b98F53ddD521b | MEP2542,ISOToken | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| MCHL2 | 0x1000777700000000000000000000000000000001 | Moonchain | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| TokenVault | 0x1000777700000000000000000000000000000002 | Moonchain | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| EtherVault | 0x1000777700000000000000000000000000000003 | Moonchain | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| Bridge | 0x1000777700000000000000000000000000000004 | Moonchain | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| AddressManager | 0x1000777700000000000000000000000000000006 | Moonchain | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| SignalService | 0x1000777700000000000000000000000000000007 | Moonchain | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
-| MNS | [List](https://github.com/JDI-Group/mns-contracts/tree/main/deployments/Hudson) | Moonchain | 0x52f60448790E485F38f2Aa9c867CD0DD647c0b73 |
+*Last Updated: September 8, 2025*
