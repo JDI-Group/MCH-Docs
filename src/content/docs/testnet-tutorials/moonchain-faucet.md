@@ -28,7 +28,7 @@ Ensure you have an EVM-compatible wallet address to accept the testnet tokens. I
 ## Steps to follow
 
 **1. Claim and receive your Hudson Testnet $MCH Tokens**
-    - Navigate to the [Hudson Testnet Faucet](https://Hudson-faucet.mchain.ai/)
+    - Navigate to the [Hudson Testnet Faucet](https://hudson-bridge.mchain.ai/faucet)
     - Insert your Wallet Address
     - Click on "Send me MCH". The Hudson Testnet tokens should arrive shortly.
 
